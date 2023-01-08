@@ -34,9 +34,9 @@ public class PeminjamanPage {
     }
 
     public void peminjaman(){
-        if(anggota.anggota_m.getDataAnggota().size()>0 && buku.buku_model.getDataBuku().size()>0){
+        if(anggota.anggota_m.getDataAnggota().size() > 0 || buku.buku_model.getDataBuku().size()>0){
             int KodeAnggota;
-            String KodeBuku;
+            int KodeBuku;
             String pilih="";
             System.out.print("Masukkan kode anggota = ");
             KodeAnggota = input.nextInt();
@@ -47,7 +47,7 @@ public class PeminjamanPage {
             }else{
                 do{
                     System.out.print("Masukkan kode Buku = ");
-                    KodeBuku = input.next();
+                    KodeBuku = input.nextInt();
                     int indexBuku = buku.cekBuku(KodeBuku);
 
                     if(buku.cekBuku(KodeBuku) == -1){

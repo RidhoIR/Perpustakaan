@@ -44,11 +44,11 @@ public class Buku_Controller {
         buku_model.delete(index);
     }
 
-    public int cekBuku(String Id_buku){
+    public int cekBuku(int Id_buku){
         int keterangan = -1;
         if(buku_model.getDataBuku().size()>0){
             for(int i=0;i<buku_model.getDataBuku().size();i++){
-                if(Id_buku.equals(buku_model.getDataBuku().get(i).getId_buku())){
+                if(Id_buku == buku_model.getDataBuku().get(i).getId_buku()){
                     keterangan = i;
                     break;
                 }else{
