@@ -1,6 +1,7 @@
 
 package View;
 
+import Controller.AllObjectController;
 import Controller.Buku_Controller;
 
 import java.util.Scanner;
@@ -8,7 +9,7 @@ import java.util.Scanner;
 public class BukuPage {
 
     Scanner input = new Scanner(System.in);
-    public Buku_Controller buku = new Buku_Controller();
+//    public Buku_Controller buku = new Buku_Controller();
 
     public BukuPage(){
 
@@ -63,7 +64,7 @@ public class BukuPage {
         String penulis = input.nextLine();
         System.out.print("Masukkan penerbit             : ");
         String penerbit = input.nextLine();
-        buku.insert(id,judul,halaman,tanggal,penulis,penerbit);
+        AllObjectController.buku.insert(id,judul,halaman,tanggal,penulis,penerbit);
     }
     public void Update(){
         System.out.print("index barang ke - : ");
@@ -82,34 +83,34 @@ public class BukuPage {
         String penulis = input.nextLine();
         System.out.print("Masukkan penerbit             : ");
         String penerbit = input.nextLine();
-        buku.update(index,id,judul,halaman,tanggal,penulis,penerbit);
+        AllObjectController.buku.update(index,id,judul,halaman,tanggal,penulis,penerbit);
     }
 
     public void Delete() {
-        if(buku.buku_model.getDataBuku().size()>0){
-            for (int i = 0; i < buku.buku_model.getDataBuku().size(); i++) {
-                System.out.println("["+i+"] "+buku.buku_model.getDataBuku().get(i).getJudul());
+        if(AllObjectController.buku.buku_model.getDataBuku().size()>0){
+            for (int i = 0; i < AllObjectController.buku.buku_model.getDataBuku().size(); i++) {
+                System.out.println("["+i+"] "+AllObjectController.buku.buku_model.getDataBuku().get(i).getJudul());
             }
 
             System.out.println("Pilih Index Buku : ");
             int selectIndex = input.nextInt();
 
-            buku.buku_model.getDataBuku().remove(selectIndex);
+            AllObjectController.buku.buku_model.getDataBuku().remove(selectIndex);
             System.out.print("Data Buku Berhasil Dihapus !!\n");
         }else{
             System.out.println("Data Buku Kosong\n");
         }
     }
 
-    public void view(){
-        for(int i = 0; i<buku.buku_model.getDataBuku().size(); i++){
+    public static void view(){
+        for(int i = 0; i<AllObjectController.buku.buku_model.getDataBuku().size(); i++){
             System.out.println("========================");
-            System.out.println("Id Buku        : "+buku.buku_model.getDataBuku().get(i).getId_buku());
-            System.out.println("Judul          : "+buku.buku_model.getDataBuku().get(i).getJudul());
-            System.out.println("Halaman        : "+buku.buku_model.getDataBuku().get(i).getHalaman());
-            System.out.println("Tanggal Terbit : "+buku.buku_model.getDataBuku().get(i).getTanggalTerbit());
-            System.out.println("Penulis        : "+buku.buku_model.getDataBuku().get(i).getPenulis());
-            System.out.println("Penerbit       : "+buku.buku_model.getDataBuku().get(i).getPenerbit());
+            System.out.println("Id Buku        : "+AllObjectController.buku.buku_model.getDataBuku().get(i).getId_buku());
+            System.out.println("Judul          : "+AllObjectController.buku.buku_model.getDataBuku().get(i).getJudul());
+            System.out.println("Halaman        : "+AllObjectController.buku.buku_model.getDataBuku().get(i).getHalaman());
+            System.out.println("Tanggal Terbit : "+AllObjectController.buku.buku_model.getDataBuku().get(i).getTanggalTerbit());
+            System.out.println("Penulis        : "+AllObjectController.buku.buku_model.getDataBuku().get(i).getPenulis());
+            System.out.println("Penerbit       : "+AllObjectController.buku.buku_model.getDataBuku().get(i).getPenerbit());
 
         }
         System.out.println("========================");

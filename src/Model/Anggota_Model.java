@@ -18,6 +18,7 @@ public class Anggota_Model implements Interface_Model {
 
     @Override
     public void insert(Object x) {
+
         DataAnggota.add((Anggota_Entity) x);
     }
 

@@ -7,7 +7,11 @@ import java.util.ArrayList;
 public class Buku_Model implements Interface_Model {
 
 
-    ArrayList<Buku_Entity> list = new ArrayList<>();
+    public ArrayList<Buku_Entity> list;
+
+    public Buku_Model(){
+        list = new ArrayList<>();
+    }
 
 
     public ArrayList<Buku_Entity> getDataBuku(){
@@ -16,6 +20,7 @@ public class Buku_Model implements Interface_Model {
 
     @Override
     public void insert(Object x) {
+
         list.add((Buku_Entity) x);
     }
 

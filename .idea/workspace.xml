@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0861ed7d-8998-42d9-a999-01ad24a6f17c" name="Changes" comment="">
+    <list default="true" id="0861ed7d-8998-42d9-a999-01ad24a6f17c" name="Changes" comment="oi">
+      <change afterPath="$PROJECT_DIR$/src/Controller/AllObjectController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Buku_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Buku_Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UAS PBO/Controller/Buku_Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UAS PBO/Controller/Buku_Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UAS PBO/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UAS PBO/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UAS PBO/Model/Anggota_Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UAS PBO/Model/Anggota_Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UAS PBO/Model/Buku_Model.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UAS PBO/Model/Buku_Model.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UAS PBO/View/AnggotaPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UAS PBO/View/AnggotaPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UAS PBO/View/BukuPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UAS PBO/View/BukuPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UAS PBO/View/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UAS PBO/View/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UAS PBO/View/PeminjamanPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UAS PBO/View/PeminjamanPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Anggota_Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Anggota_Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Buku_Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Buku_Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/AnggotaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AnggotaPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/BukuPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/BukuPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/PeminjamanPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/PeminjamanPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +90,29 @@
       <option name="presentableId" value="Default" />
       <updated>1672035424349</updated>
     </task>
+    <task id="LOCAL-00001" summary="oi">
+      <created>1673180142500</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673180142500</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="oi" />
+    <option name="LAST_COMMIT_MESSAGE" value="oi" />
   </component>
 </project>

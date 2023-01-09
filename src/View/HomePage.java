@@ -5,9 +5,7 @@ import java.util.Scanner;
 public class HomePage {
 
     Scanner input = new Scanner(System.in);
-    BukuPage buku = new BukuPage();
-    AnggotaPage anggota = new AnggotaPage();
-    PeminjamanPage peminjaman = new PeminjamanPage();
+
 
 
     public static void menuUtama(){
